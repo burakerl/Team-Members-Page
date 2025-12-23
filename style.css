@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+}
+
+
+
+/*HEADER */
+header {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info {
+    padding: 3rem 2rem;
+    width: 50%;
+
+}
+
+
+
+/* CONTAINER*/
+.main-container {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 3rem;
+    justify-content: center;
+}
+
+.card {
+    border-radius: 1rem;
+    background-color: rgb(184, 152, 48);
+    width: fit-content;
+    height: fit-content;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+    font-size: 1.3rem;
+}
+
+img {
+    border-radius: 1rem;
+    display: block;
+    width: 28vw;
+    height: 80vh;
+}
+
+.card.two,
+.card.five {
+    margin-top: 10rem;
+    background-color: rgb(72, 156, 196);
+}
+
+
+
+/* CARD HIDDEN*/
+.hidden-text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    opacity: 0;
+}
+
+.card:hover .hidden-text {
+    opacity: 1;
+    background: rgba(184, 152, 48, 0.65);
+}
+
+.card:hover .hidden-text.blue {
+    opacity: 1;
+    background: rgba(72, 156, 196, 0.65);
+}
+
+.hidden-text h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(17, 37, 50, 0.5);
+    width: 8vw;
+    height: 3vh;
+    border-radius: 1rem;
+    margin-bottom: 1.4rem;
+}
+
+.hidden-text p {
+    border-bottom: 1px solid rgb(17, 37, 50);
+    border-radius: 10px;
+    padding: 2vh 4vh;
+}
