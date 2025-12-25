@@ -54,9 +54,9 @@ h2 {
 
 img {
     border-radius: 1rem;
-    display: block;
-    width: 28vw;
-    height: 80vh;
+    /* display: block; */
+    /* width: 28vw;
+    height: 80vh; */
 }
 
 .card.two,
@@ -103,4 +103,21 @@ img {
     border-bottom: 1px solid rgb(17, 37, 50);
     border-radius: 10px;
     padding: 2vh 4vh;
+}
+@media(max-width: 780px) {
+    img{
+
+    }
+    .main-container{
+        display: block;
+        flex-direction: column;
+    }
+    img{
+        width: fit-content;
+    }
+    .card,
+    .card.two,
+    .card.five{
+        margin-top: 1rem;
+    }
 }
